@@ -31,6 +31,7 @@ services:
       - ./apache-limits.conf:/etc/apache2/conf-enabled/limits.conf:ro
     networks:
       - wp-network
+      - portal_net
 
 volumes:
   db_data:
@@ -39,3 +40,5 @@ volumes:
 networks:
   wp-network:
     driver: bridge
+  portal_net:
+    external: true
