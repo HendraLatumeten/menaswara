@@ -1,0 +1,4 @@
+.env
+# Ignore local data if you decide to use bind mounts later
+# wp-content/
+# mysql-data/
