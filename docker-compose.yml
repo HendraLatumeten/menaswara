@@ -1,6 +1,6 @@
 services:
   db:
-    image: mariadb:latest
+    image: docker.io/library/mariadb:latest
     container_name: menaswara-db
     restart: always
     environment:
@@ -16,7 +16,7 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress:latest
+    image: docker.io/library/wordpress:latest
     container_name: menaswara-wp
     restart: always
     ports:
